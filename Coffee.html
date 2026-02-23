@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>` Shop</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FAF3E0;
+    color: #3E2723;
+}
+
+.container {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+header {
+    background-color: #4E342E;
+    color: #FFF8E1;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+nav {
+    margin-top: 12px;
+}
+
+nav a {
+    color: #FFE0B2;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #FFCC80;
+}
+
+.hero {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.45)
+    ),
+    url("https://www.canva.com/design/DAG_OOPSniQ/d-dqfgs3iW0MPkRcR0YSwg/edit?utm_content=DAG_OOPSniQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton");
+    background-size: cover;
+    background-position: center;
+    padding: 120px 20px;
+    text-align: center;
+    color: #FFFDF7;
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.hero button {
+    background-color: #D7A86E;
+    border: none;
+    padding: 14px 35px;
+    font-size: 16px;
+    color: #3E2723;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.hero button:hover {
+    background-color: #C28E5C;
+}
+
+/* INFO SECTION */
+.info {
+    display: flex;
+    gap: 40px;
+    padding: 60px 80px;
+    background-color: #FFF8E1;
+}
+
+.info div {
+    flex: 1;
+}
+
+.info h3 {
+    color: #6D4C41;
+    font-size: 24px;
+}
+
+.info p, .info li {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* MENU SECTION */
+.menu {
+    padding: 60px 80px;
+    background-color: #FAF3E0;
+}
+
+.menu h3 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #5D4037;
+    font-size: 30px;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu-items div {
+    background-color: #FFFDF7;
+    padding: 30px;
+    border-radius: 20px;
+    width: 230px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.menu-items h4 {
+    color: #8D6E63;
+    margin-bottom: 15px;
+}
+
+.menu-items ul {
+    padding: 0;
+}
+
+.menu-items li {
+    list-style: none;
+    padding: 6px 0;
+}
+
+/* FOOTER */
+footer {
+    background-color: #3E2723;
+    color: #FFE0B2;
+    text-align: center;
+    padding: 18px;
+    font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .info, .menu-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info {
+        padding: 40px 30px;
+    }
+
+    .menu {
+        padding: 40px 30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+    <h1>☕ Coffee Shop</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Menu</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Welcome to Our Coffee Shop</h2>
+    <p>Where every sip feels like home</p>
+    <button>Explore Menu</button>
+</section>
+
+<section class="info">
+    <div class="about">
+        <h3>About Us</h3>
+        <p>
+            We serve freshly brewed coffee made with love.
+            Our cozy space is perfect for friends, work, and quiet moments.
+        </p>
+    </div>
+
+    <div class="specials">
+        <h3>Our Specialties</h3>
+        <ul>
+            <li>☕ Fresh Brewed Coffee</li>
+            <li>🍫 Espresso Drinks</li>
+            <li>🥐 Homemade Pastries</li>
+        </ul>
+    </div>
+</section>
+
+<section class="menu">
+    <h3>Our Menu</h3>
+
+    <div class="menu-items">
+        <div>
+            <h4>Coffee</h4>
+            <ul>
+                <li>Latte</li>
+                <li>Cappuccino</li>
+                <li>Americano</li>
+            </ul>
+        </div>
+
+        <div>
+            <h4>Tea</h4>
+            <ul>
+                <li>Green Tea</li>
+                <li>Lemon Tea</li>
+                <li>Masala Tea</li>
+            </ul>
+        </div>
+
+        <div>
+            <h4>Pastries</h4>
+            <ul>
+                <li>Croissant</li>
+                <li>Muffin</li>
+                <li>Chocolate Cake</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 Coffee Shop | Made by Sanjana ☕
+</footer>
+
+</div>
+
+</body>
+</html>
